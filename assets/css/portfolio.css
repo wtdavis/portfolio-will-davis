@@ -1,3 +1,30 @@
+/* --------------------------------------- */
+
+/* scroll dots */
+
+.scroll-dot-container {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+    left: calc(50vw - 4px)    
+}
+
+.scroll-dot {
+    width: 6px;
+    height:6px;
+    background-color: rgba(197, 197, 197, 0.664);
+    border-radius: 50%;
+    margin-top: 6px;
+}
+
+/* ----------------------------------- */
+
+/* technologies */
+
+
 .technologies-row {
     display: flex;
     flex-direction: row;
@@ -23,3 +50,26 @@
 .big-break {
     margin-bottom: 10px
 }
+
+
+/* ------------------------------------ */
+
+/* products */
+
+
+.product-tile-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.product-tile {
+    border-radius: 5%;
+    min-width: 140px;
+
+}
+
+.product-tile-img {
+    height: 140px
+}
+
