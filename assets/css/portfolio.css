@@ -1,0 +1,25 @@
+.technologies-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.technology-tile {
+    min-width: 200px;
+    min-height: 130px;;
+}
+
+.technology-tile-img {
+    width: 100px;
+    height: 100px;
+    /* background-color: rgba(245, 245, 245, 0.377); */
+    border-radius: 7%;
+    margin: 20px
+}
+
+.big-break {
+    margin-bottom: 10px
+}
