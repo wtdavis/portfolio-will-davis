@@ -13,7 +13,8 @@ function App () {
     
     let tile3 = document.querySelector(".tile-3")
     let productScreen = document.querySelector(".product-screen")
-
+    let success = false
+    let errors = []
 
     let currentTile = tile1;
     // let productScreen = false;
