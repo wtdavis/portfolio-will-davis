@@ -3,6 +3,7 @@ window.addEventListener("click", console.log("window click"))
 
 
 function App () {
+
     console.log("dom content loaded")
     window.addEventListener("click", console.log("click"))
     let document = new Document()
@@ -12,9 +13,13 @@ function App () {
     let tile2 = document.querySelector(".tile-2")
     
     let tile3 = document.querySelector(".tile-3")
+
     let productScreen = document.querySelector(".product-screen")
+
+    let trackingReference = [tile1, tile2, tile3]
     let success = false
     let errors = []
+
 
     let currentTile = tile1;
     // let productScreen = false;
