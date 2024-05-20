@@ -46,15 +46,24 @@ function App () {
 
 
     const handleTileClick = (tile) => {
-        if (currentTile === tile) {
+        if (pageState.activeTile() === tile) {
+            debugger
             productScreen.setAttribute("visibility", "hidden")
+            pageState.setActiveTile(null)
         }
         else {
+            debugger
+            // productScreen.setAttribute("visibility", "visible")
+            console.log("show")
             productScreen.setAttribute("visibility", "visible")
+            // productScreen.setAttribute("background-color", "blue")
+            pageState.setActiveTile(tile)
         }
         console.log(pageState.activeTile())
     }
 
-    // console.log(errors)
+    
+
+
 }
 window.addEventListener("DOMContentLoaded", App())

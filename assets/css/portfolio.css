@@ -73,6 +73,31 @@
     height: 140px
 }
 
+.product-tile-title {
+    font-family: 'Baloo Paaji';
+    color: var(--indigo);
+    font-weight: bolder;
+}
+
+.product-tile-subtitle {
+    font-family: 'Baloo Paaji';
+    font-weight: 100;
+    color: #9d88c5;
+}
+
 .product-screen {
-    height: 500px;  
+    height: 400px;
+    width: 100%;
+    display: flex;
+    visibility: visible;
+    background-color: chartreuse;
+}
+
+.test-button {
+    
+}
+
+.test-div {
+    visibility: visible;
+    background-color: blue;
 }
