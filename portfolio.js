@@ -1,18 +1,16 @@
-window.addEventListener("DOMContentLoaded", console.log("dom content loaded"))
-window.addEventListener("click", console.log("window click"))
 
 
 function App () {
 
     console.log("dom content loaded")
-    window.addEventListener("click", console.log("click"))
-    let document = new Document()
-    let tile1 = document.getElementById("tile-1")
+    debugger
+    // let document = new Document()
+    let tile1 = document.getElementById('tile-1')
     // let tile1 = document.querySelector(".tile-1")
 
-    let tile2 = document.querySelector(".tile-2")
+    let tile2 = document.querySelector('.tile-2')
     
-    let tile3 = document.querySelector(".tile-3")
+    let tile3 = document.querySelector('.tile-3')
 
     let productScreen = document.querySelector(".product-screen")
 
@@ -54,5 +52,6 @@ function App () {
         console.log(currentTile)
     }
 
-    console.log(errors)
+    // console.log(errors)
 }
+window.addEventListener("DOMContentLoaded", App())
