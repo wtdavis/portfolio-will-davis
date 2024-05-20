@@ -1,12 +1,22 @@
+class PageState {
+    constructor (activeTile) {
+        this.tile = activeTile
+    }
 
+    setActiveTile (tile) {
+        this.tile = tile
+    }
+
+    activeTile () {
+        return this.tile
+    }
+}
 
 function App () {
 
-    console.log("dom content loaded")
+    let pageState = new PageState
     debugger
-    // let document = new Document()
     let tile1 = document.getElementById('tile-1')
-    // let tile1 = document.querySelector(".tile-1")
 
     let tile2 = document.querySelector('.tile-2')
     
@@ -20,23 +30,16 @@ function App () {
 
 
     let currentTile = tile1;
-    // let productScreen = false;
 
     tile1.addEventListener("click", () => {
-        // currentTile = tile1
-        // productScreen = true
         console.log("click")
         handleTileClick(tile1) 
     })
     tile2.addEventListener("click", () => {
-        // currentTile = tile2
-        // productScreen = true
         console.log("click")
         handleTileClick(tile2) 
     })
     tile3.addEventListener("click", () => {
-        // currentTile = tile3
-        // productScreen = true
         console.log("click")
         handleTileClick(tile3) 
     })
@@ -49,7 +52,7 @@ function App () {
         else {
             productScreen.setAttribute("visibility", "visible")
         }
-        console.log(currentTile)
+        console.log(pageState.activeTile())
     }
 
     // console.log(errors)
