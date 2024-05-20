@@ -53,4 +53,6 @@ function App () {
         }
         console.log(currentTile)
     }
+
+    console.log(errors)
 }
