@@ -34,12 +34,15 @@ function Product (activeTile) {
     }
 
     if (enlargeTile) {
-        enlargeTile.setAttribute("style", "width:400px;height:300px;")
+        enlargeTile.setAttribute("style", "height:300px;")
+        for (let i=0; i<normalsizeTiles.length; i++) {
+            normalsizeTiles[i].setAttribute("style", "height:50px")
+        }
     }
 
-    if (normalsizeTiles) {
+    if (normalsizeTiles && (!enlargeTile)) {
         for (let i=0; i<normalsizeTiles.length; i++) {
-            normalsizeTiles[i].setAttribute("style", "width:200px;height:140px")
+            normalsizeTiles[i].setAttribute("style", "height:140px")
         }
     }
 
