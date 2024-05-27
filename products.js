@@ -11,7 +11,7 @@ function Product (activeTile) {
 
     let enlargeTile;
     let normalsizeTiles;
-
+debugger
     switch (activeTile) {
         case (tile1):
             enlargeTile = tile1Img;
@@ -29,16 +29,16 @@ function Product (activeTile) {
             enlargeTile = null;
             normalsizeTiles = [tile1Img, tile2Img, tile3Img]
     }
-
+debugger
     if (enlargeTile) {
         enlargeTile.setAttribute("style", "height:300px;")
         for (let i=0; i<normalsizeTiles.length; i++) {
-            normalsizeTiles[i].setAttribute("style", "height:50px")
+            normalsizeTiles[i].setAttribute("style", "height:50px;opacity:0.3")
         }
     }
     else {
         for (let i=0; i<normalsizeTiles.length; i++) {
-            normalsizeTiles[i].setAttribute("style", "height:140px")
+            normalsizeTiles[i].setAttribute("style", "height:140px;opacity:0.3")
         }
     }
 

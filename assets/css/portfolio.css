@@ -66,6 +66,7 @@
 .product-tile {
     border-radius: 5%;
     min-width: 140px;
+    object-fit: contain;
 }
 
 .product-tile:hover {
@@ -73,7 +74,8 @@
 }
 
 .product-tile-img {
-    height: 140px
+    height: 140px;
+    object-fit: scale-down
 }
 
 .product-tile-title {
@@ -93,7 +95,9 @@
     width: 100%;
     display: flex;
     visibility: visible;
-    background-color: chartreuse;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 img {

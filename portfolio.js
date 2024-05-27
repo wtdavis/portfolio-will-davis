@@ -67,6 +67,7 @@ function App () {
 // event handlers ---------------------------
 
     const handleTileClick = (tile) => {
+        debugger
         if (pageState.activeTile() === tile) {
             // productScreen.setAttribute("visibility", "hidden")
             pageState.setActiveTile(null)
@@ -81,19 +82,8 @@ function App () {
     }
 
 
-// event listeners -----------------------------
 
 
-
-        tile1.addEventListener("click", () => {
-            handleTileClick(tile1) 
-        })
-        tile2.addEventListener("click", () => {
-            handleTileClick(tile2) 
-        })
-        tile3.addEventListener("click", () => {
-            handleTileClick(tile3) 
-        })
 
     
 //  dynamic content panels --------------------------
