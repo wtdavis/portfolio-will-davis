@@ -6,16 +6,13 @@ class PageState {
     }
 
     setActiveTile (tile) {
-        debugger
         this.tile = tile
     }
 
     unsetActiveTile () {
-        debugger
         let image = document.querySelector(`${this.tile.getAttribute("class")} img`)
         image.setAttribute("style", "width:140px")
         this.tile = null
-        debugger
 
     }
 
@@ -29,9 +26,8 @@ class PageState {
 }
 
 function App () {
-
+    console.log("app")
     let pageState = new PageState
-    debugger
     let tile1 = document.getElementById('tile-1')
 
     let tile2 = document.querySelector('.tile-2')
@@ -40,15 +36,21 @@ function App () {
 
     let productScreen = document.querySelector(".product-screen")
 
+    window.addEventListener("click", () => {
+        console.log("click")
+    })
 
-    tile1.addEventListener("click", () => {
-        handleTileClick(tile1) 
+    tile1.addEventListener("click", (e) => {
+        e.preventDefault();
+        handleTileClick(tile1);
     })
-    tile2.addEventListener("click", () => {
-        handleTileClick(tile2) 
+    tile2.addEventListener("click", (e) => {
+        e.preventDefault();
+        handleTileClick(tile2);
     })
-    tile3.addEventListener("click", () => {
-        handleTileClick(tile3) 
+    tile3.addEventListener("click", (e) => {
+        e.preventDefault();
+        handleTileClick(tile3);
     })
 
     // testButton.addEventListener('click', () => {
@@ -65,19 +67,16 @@ function App () {
 // event handlers ---------------------------
 
     const handleTileClick = (tile) => {
-
-
-
         if (pageState.activeTile() === tile) {
-            productScreen.setAttribute("visibility", "hidden")
+            // productScreen.setAttribute("visibility", "hidden")
             pageState.setActiveTile(null)
-
+            console.log(pageState.activeTile())
         }
         else {
-            productScreen.setAttribute("visibility", "visible")
+            // productScreen.setAttribute("visibility", "visible")
             pageState.setActiveTile(tile)
+            console.log(pageState.activeTile())
         }   
-
         Product(pageState.activeTile())
     }
 
@@ -87,15 +86,12 @@ function App () {
 
 
         tile1.addEventListener("click", () => {
-            console.log("click")
             handleTileClick(tile1) 
         })
         tile2.addEventListener("click", () => {
-            console.log("click")
             handleTileClick(tile2) 
         })
         tile3.addEventListener("click", () => {
-            console.log("click")
             handleTileClick(tile3) 
         })
 
