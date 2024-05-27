@@ -60,7 +60,7 @@
 .product-tile-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .product-tile {
@@ -93,11 +93,8 @@
     background-color: chartreuse;
 }
 
-.test-button {
-    
-}
+/* ------------------ media  */
 
-.test-div {
-    visibility: visible;
-    background-color: blue;
+.developer-photo {
+    border-radius: 20px;
 }
