@@ -86,11 +86,6 @@ function App () {
 
 
     
-//  dynamic content panels --------------------------
-        let productTextStreetEasy = 'EliteEasy is a fullstack clone of StreetEasy, the NYC real-estate site, built with React and Ruby on Rails. Inspired by the "rent is too dang high" political candidate, this represents my first fullstack building experience, and an exercise in style guide adherence.'
-        let productTextCapyCopter = 'CapyCopter is a vanilla Javascript side-scroller, an original game I made during App Academy. The purpose of this project was to bring a complex program from concept to deployment, without the use of 3rd party libraries.'
-        let productTextTripClub = 'Trip Club is an original web app I created in concert with Olga Bessanova at App Academy, built on the MERN stack. The app allows multiple users to collaborate on a trip itinerary, incorporate maps, and upload photos. Our goal was to create a simple and useful tool, quickly, and as a team.'
-
 
 }
 window.addEventListener("DOMContentLoaded", App())
