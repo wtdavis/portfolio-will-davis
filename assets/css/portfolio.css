@@ -98,6 +98,6 @@
 }
 
 .test-div {
-    visibility: visible;
-    background-color: blue;
+    /* visibility: visible; */
+    /* background-color: blue; */
 }
