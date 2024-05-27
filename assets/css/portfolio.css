@@ -93,3 +93,7 @@
     background-color: chartreuse;
 }
 
+img {
+    transition-property: all;
+    transition-duration: .2s;
+}
