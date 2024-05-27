@@ -100,3 +100,9 @@ img {
     transition-property: all;
     transition-duration: .2s;
 }
+
+/* media ------------------------ */
+
+.developer-photo {
+    border-radius: 15px;
+}
