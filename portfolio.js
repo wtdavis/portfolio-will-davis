@@ -1,3 +1,5 @@
+import Product from "./products.js"
+
 class PageState {
     constructor (activeTile) {
         this.tile = activeTile
@@ -28,20 +30,26 @@ class PageState {
 
 function App () {
 
-    let pageState = new PageState;
-    let tile1 = document.getElementById('tile-1');
-    let tile2 = document.querySelector('.tile-2');
-    let tile3 = document.querySelector('.tile-3');
-    // let testButton = document.querySelector('.test-button')
-    // let testDiv = document.querySelector('.test-div')
+    let pageState = new PageState
+    debugger
+    let tile1 = document.getElementById('tile-1')
 
-    let productScreen = document.querySelector(".product-screen");
-    let trackingReference = [tile1, tile2, tile3];
-    let success = false;
-    let errors = [];
-    let currentTile = tile1;
+    let tile2 = document.querySelector('.tile-2')
+    
+    let tile3 = document.querySelector('.tile-3')
 
-// test button element -----------------------------------------
+    let productScreen = document.querySelector(".product-screen")
+
+
+    tile1.addEventListener("click", () => {
+        handleTileClick(tile1) 
+    })
+    tile2.addEventListener("click", () => {
+        handleTileClick(tile2) 
+    })
+    tile3.addEventListener("click", () => {
+        handleTileClick(tile3) 
+    })
 
     // testButton.addEventListener('click', () => {
     //     testDiv.setAttribute('height', '500px')
@@ -58,27 +66,19 @@ function App () {
 
     const handleTileClick = (tile) => {
 
-        let tileImgs = document.querySelectorAll(".product-tile-img")
 
 
         if (pageState.activeTile() === tile) {
-            productScreen.setAttribute("style", "visibility:hidden")
+            productScreen.setAttribute("visibility", "hidden")
             pageState.setActiveTile(null)
 
         }
         else {
-            debugger
-            let activeTile = pageState.activeTile()
-            // pageState.unsetActiveTile()
+            productScreen.setAttribute("visibility", "visible")
             pageState.setActiveTile(tile)
+        }   
 
-            productScreen.setAttribute("style", "visibility:visible")
-            let activeTileClass = pageState.activeTileClass().split(" ")
-            let tileImg = document.querySelector(`.${activeTileClass[1]} img`)
-            tileImg.setAttribute("style", "height:300px")
-            debugger
-        }
-        console.log(pageState.activeTile())
+        Product(pageState.activeTile())
     }
 
 

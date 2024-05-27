@@ -66,7 +66,10 @@
 .product-tile {
     border-radius: 5%;
     min-width: 140px;
+}
 
+.product-tile:hover {
+    background-color: rgb(241, 240, 240);
 }
 
 .product-tile-img {
@@ -93,8 +96,7 @@
     background-color: chartreuse;
 }
 
-/* ------------------ media  */
-
-.developer-photo {
-    border-radius: 20px;
+img {
+    transition-property: all;
+    transition-duration: .2s;
 }
