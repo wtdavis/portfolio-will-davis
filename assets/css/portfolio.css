@@ -60,7 +60,8 @@
 .product-tile-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: end;
 }
 
 .product-tile {

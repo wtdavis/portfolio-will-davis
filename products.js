@@ -8,6 +8,8 @@ function Product (activeTile) {
     let tile2Img = document.querySelector(".tile-2-img")
     let tile3Img = document.querySelector(".tile-3-img")
 
+    let productPanel = document.querySelector(".product-screen")
+
 
     let enlargeTile;
     let normalsizeTiles;
@@ -40,6 +42,7 @@ debugger
         for (let i=0; i<normalsizeTiles.length; i++) {
             normalsizeTiles[i].setAttribute("style", "height:140px;opacity:0.3")
         }
+
     }
 
 }
