@@ -1,5 +1,7 @@
 import Product from "./products.js"
 
+
+
 class PageState {
     constructor (activeTile) {
         this.tile = activeTile
@@ -13,7 +15,6 @@ class PageState {
         let image = document.querySelector(`${this.tile.getAttribute("class")} img`)
         image.setAttribute("style", "width:140px")
         this.tile = null
-
     }
 
     activeTile () {
@@ -25,20 +26,13 @@ class PageState {
     }
 }
 
+
+
 function App () {
-    console.log("app")
     let pageState = new PageState
-    let tile1 = document.getElementById('tile-1')
-
+    let tile1 = document.querySelector('.tile-1')
     let tile2 = document.querySelector('.tile-2')
-    
     let tile3 = document.querySelector('.tile-3')
-
-    let productScreen = document.querySelector(".product-screen")
-
-    window.addEventListener("click", () => {
-        console.log("click")
-    })
 
     tile1.addEventListener("click", (e) => {
         e.preventDefault();
@@ -52,17 +46,6 @@ function App () {
         e.preventDefault();
         handleTileClick(tile3);
     })
-
-    // testButton.addEventListener('click', () => {
-    //     testDiv.setAttribute('height', '500px')
-    //     console.log(testButton.getAttribute('height'))
-    // })
-
-    // testButton.addEventListener('click', () => {
-    //     testDiv.setAttribute('style', 'height:500px')
-    //     console.log(testButton.getAttribute('height'))
-    // })
-
 
 // event handlers ---------------------------
 
@@ -80,11 +63,6 @@ function App () {
         }   
         Product(pageState.activeTile())
     }
-
-
-
-
-
     
 
 }

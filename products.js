@@ -1,5 +1,4 @@
 function Product (activeTile) {
-    console.log("product")
     let tile1 = document.querySelector(".tile-1")
     let tile2 = document.querySelector(".tile-2")
     let tile3 = document.querySelector(".tile-3")
@@ -17,18 +16,20 @@ function Product (activeTile) {
     let liveLink
     let githubLink
 
-//  product tile content panels --------------------------
-
-    let productTextStreetEasy = `<p> EliteEasy is a fullstack clone of StreetEasy, the NYC real-estate site, built with React and Ruby on Rails. Inspired by the "rent is too dang high" political candidate, this represents my first fullstack building experience, and an exercise in style guide adherence. </p> <a href="${liveLinkStreetEasy}"> Live Link </a> <a href="${githubStreetEasy}"`
-    let productTextCapyCopter =  `CapyCopter is a vanilla Javascript side-scroller, an original game I made during App Academy. The purpose of this project was to bring a complex program from concept to deployment, without the use of 3rd party libraries. <a href="${liveLinkCapyCopter}"> Live Link </a> <a href="${githubCapyCopter}"`
-    let productTextTripClub =  `Trip Club is an original web app I created in concert with Olga Bessanova at App Academy, built on the MERN stack. The app allows multiple users to collaborate on a trip itinerary, incorporate maps, and upload photos. Our goal was to create a simple and useful tool, quickly, and as a team. <a href="${liveLinkTripClub}"> Live Link </a> <a href="${githubTripClub}"`
-
+    //  product tile content panels --------------------------
     let liveLinkStreetEasy = "https://streeteasy-fullstack.onrender.com"
     let githubStreetEasy = "https://github.com/wtdavis/streeteasy_fullstack"
     let liveLinkCapyCopter = "https://wtdavis.github.io/hellocopter_js_project/"
     let githubCapyCopter = "https://github.com/wtdavis/hellocopter_js_project"
     let liveLinkTripClub = "https://tripclub.onrender.com"
     let githubTripClub = "https://github.com/wtdavis/trip_club"
+
+    let productTextStreetEasy = `EliteEasy is a fullstack clone of StreetEasy, the NYC real-estate site, built with React and Ruby on Rails. Inspired by the "rent is too dang high" political candidate, this represents my first fullstack building experience, and an exercise in style guide adherence. </p> <aclass="product-panel-link live-link " href="${liveLinkStreetEasy}"> Live Link </a> <a class="product-panel-link github-link" href="${githubStreetEasy}"> Github </a>`
+
+    let productTextCapyCopter =  `CapyCopter is a vanilla Javascript side-scroller, an original game I made during App Academy. The purpose of this project was to bring a complex program from concept to deployment, without the use of 3rd party libraries. <a class="product-panel-link live-link "href="${liveLinkCapyCopter}"> Live Link </a> <a class="product-panel-link github-link" href="${githubCapyCopter}"> Github </a>`
+
+    let productTextTripClub =  `Trip Club is an original web app I created in concert with Olga Bessanova at App Academy, built on the MERN stack. The app allows multiple users to collaborate on a trip itinerary, incorporate maps, and upload photos. Our goal was to create a simple and useful tool, quickly, and as a team. <a class="product-panel-link live-link "href="${liveLinkTripClub}"> Live Link </a> <aclass="product-panel-link github-link"  href="${githubTripClub}"> Github </a>`
+
 
     // active tile logic- assigning objects into groups for resizing
 
