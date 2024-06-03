@@ -109,7 +109,7 @@
 
 .product-screen {
     color: white;
-    height: 100px;
+    /* height: 100px; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -119,13 +119,29 @@
     padding: 10px;
 }
 
-.product-screen > * {
+.product-screen * {
     color: white
+}
+
+.product-screen a:hover {
+    /* text-decoration: none; */
+    color: rgb(138, 138, 138);
+    text-shadow: 0cqh;
 }
 
 img {
     transition-property: all;
     transition-duration: .2s;
+}
+
+.product-panel-link {
+    padding: 15px
+}
+
+
+.product-panel-link-container {
+    padding: 20px 0 20px 0;
+    /* border-top: 2px solid lightseagreen  */
 }
 
 /* media ------------------------ */
