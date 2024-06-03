@@ -5,7 +5,8 @@ import Product from "./products.js"
 // populate github link
 // populate livelink link
 // separate elements on page, livelink, github
-
+// deploy!
+// 
 
 
 class PageState {
