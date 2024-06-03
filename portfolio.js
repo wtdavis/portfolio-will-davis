@@ -2,7 +2,8 @@ import Product from "./products.js"
 
 to do:
 
-populate github tiles
+populate github link
+populate livelink link
 
 
 class PageState {
