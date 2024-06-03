@@ -1,9 +1,11 @@
 import Product from "./products.js"
 
-to do:
+// to do:
 
-populate github link
-populate livelink link
+// populate github link
+// populate livelink link
+// separate elements on page, livelink, github
+
 
 
 class PageState {
