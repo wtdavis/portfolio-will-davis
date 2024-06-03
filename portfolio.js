@@ -2,10 +2,8 @@ import Product from "./products.js"
 
 // to do:
 
-// populate github link
-// populate livelink link
 // separate elements on page, livelink, github
-// deploy!
+// add icons for github and live link buttons
 // test
 
 
