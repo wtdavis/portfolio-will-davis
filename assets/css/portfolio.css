@@ -144,6 +144,35 @@ img {
     /* border-top: 2px solid lightseagreen  */
 }
 
+
+/* hire me section   ---------------------------------- */
+
+.hire-me-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hire-me-button {
+    background-color: antiquewhite;
+    display: flex;
+    max-width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.hire-me-button:hover {
+    background-color: rgb(185, 183, 183);
+    color: white;
+    border: 3px solid black;
+    margin: -3px;
+}
+
+
+
+
+
 /* media ------------------------ */
 
 .developer-photo {
